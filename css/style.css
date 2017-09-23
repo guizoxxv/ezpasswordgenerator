@@ -93,7 +93,6 @@ footer a {
 }
 footer a:hover {
   color: red;
-  text-decoration: underline;
   transition:0.3s;
 }
 
