@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>EZ Password Generator</title>
+    <meta name="author" content="guizo">
+    <meta name="description" content="EZ Password Generator. Easily generate random passwords.">
+    <meta name="keywords" content="guizo, guizoxxv, ez, password, passwords, generator">
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="icon" href="img/guizo-favicon.png">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.5.0/hint.min.css" integrity="sha256-EaR2e3c1FypmKsKDNZmWB6cSPqi+c/wXPX0eQQKwj70=" crossorigin="anonymous">
+    <link rel='stylesheet' href='css/style.css'>
+  </head>
+
+  <body>
+
+    <header>
+      <h1><a href="index.html">EZ Password Generator</a></h1>
+    </header>
+
+    <main>
+      <div class="main-content">
+        <div class="password-form">
+          <div class="length-wrapper form-group">
+            <label for="length">Length: </label>
+            <select name="length">
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6" selected>6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+            </select>
+          </div>
+          <div class="checkbox-wrapper">
+            <div class="form-group">
+              <input type="checkbox" name="lower" checked>
+              <label for="numbers">a-z</label>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" name="upper" checked>
+              <label for="numbers">A-Z</label>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" name="number" checked>
+              <label for="numbers">0-9</label>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" name="special" checked>
+              <label for="special_characters">!@#$%^&*()-_=+</label>
+            </div>
+          </div>
+          <div class="form-group btn-wrapper">
+            <button class="generate-btn">Generate</button>
+          </div>
+        </div>
+        <div class="password-box">
+          <div class="password-text">
+            -
+          </div>
+          <button class="copy-btn" data-clipboard-target=".password-text"><i class="fa fa-clipboard" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p id="footnote"><i class="fa fa-code" aria-hidden="true"></i> with <i class='fa fa-heart'></i> by <a class="guizo-link" href="http://guizo-portfolio.kissr.com/" target="_blank" title="guizo portfolio">guizo</a>. <a href="#">View on GitHub <i class="fa fa-github" aria-hidden="true"></i></a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+    <script src='js/script.js'></script>
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-86469614-4', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>
